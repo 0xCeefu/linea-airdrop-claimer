@@ -1,23 +1,13 @@
 import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 import {
-  arbitrum,
-  base,
-  mainnet,
-  optimism,
-  polygon,
-  sepolia,
+  linea,
 } from 'wagmi/chains';
 
 export const config = getDefaultConfig({
   appName: 'RainbowKit App',
-  projectId: 'YOUR_PROJECT_ID',
+  projectId: process.env.NEXT_PUBLIC_PROJECT_ID!,
   chains: [
-    mainnet,
-    polygon,
-    optimism,
-    arbitrum,
-    base,
-    ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
+    linea
   ],
   ssr: true,
 });
