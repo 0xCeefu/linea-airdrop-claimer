@@ -15,6 +15,7 @@ A decentralized application (DApp) for claiming Linea airdrop tokens. Built with
 - [wagmi](https://wagmi.sh) – Ethereum React hooks
 - [Next.js](https://nextjs.org/) – React framework
 - [TypeScript](https://www.typescriptlang.org/) – Type safety
+- [Alchemy RPC](https://www.alchemy.com/) – Blockchain node provider
 
 ## Getting Started
 
