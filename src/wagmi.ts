@@ -17,8 +17,6 @@ const customLinea = {
     },
   },
 };
-console.log("Linea RPC URLs:", linea.rpcUrls);
-console.log("Custom Linea RPC URLs:", customLinea.rpcUrls);
 
 
 export const config = getDefaultConfig({
