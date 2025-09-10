@@ -1,29 +1,60 @@
-This is a [RainbowKit](https://rainbowkit.com) + [wagmi](https://wagmi.sh) + [Next.js](https://nextjs.org/) project bootstrapped with [`create-rainbowkit`](/packages/create-rainbowkit).
+# Linea Airdrop Claim DApp
+
+A decentralized application (DApp) for claiming Linea airdrop tokens. Built with RainbowKit, wagmi, and Next.js, this project allows users to connect their wallet, check their Linea token allocation, and claim tokens if eligible.
+
+![Screenshot](./screenshot.png)
+
+## Features
+- Connect your wallet using RainbowKit
+- Check your Linea token allocation
+- Claim airdrop tokens if eligible
+- Transaction status and error handling
+
+## Technologies Used
+- [RainbowKit](https://rainbowkit.com) – Wallet connection UI
+- [wagmi](https://wagmi.sh) – Ethereum React hooks
+- [Next.js](https://nextjs.org/) – React framework
+- [TypeScript](https://www.typescriptlang.org/) – Type safety
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/linea-airdrop-claim.git
+   cd linea-airdrop-claim
+   ```
 
-```bash
-npm run dev
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Set up environment variables:
+   - Copy `.env.local.example` to `.env.local` and add your RainbowKit project ID:
+     ```env
+     NEXT_PUBLIC_PROJECT_ID=your_project_id_here
+     ```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Usage
+- Connect your wallet using the Connect button.
+- View your Linea token allocation.
+- If eligible, click "Claim Airdrop" to claim your tokens.
+- Transaction status and errors will be displayed.
+
+## Screenshot
+Add a screenshot of the app UI to `public/screenshot.png`.
 
 ## Learn More
+- [RainbowKit Documentation](https://rainbowkit.com)
+- [wagmi Documentation](https://wagmi.sh)
+- [Next.js Documentation](https://nextjs.org/docs)
 
-To learn more about this stack, take a look at the following resources:
-
-- [RainbowKit Documentation](https://rainbowkit.com) - Learn how to customize your wallet connection flow.
-- [wagmi Documentation](https://wagmi.sh) - Learn how to interact with Ethereum.
-- [Next.js Documentation](https://nextjs.org/docs) - Learn how to build a Next.js application.
-
-You can check out [the RainbowKit GitHub repository](https://github.com/rainbow-me/rainbowkit) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+MIT
